@@ -146,11 +146,14 @@
 	git init--> create an empty git repository (local repo)
 	git remote add origin "https://github.com/shivakumar2133/eBanking.git"
 	git status--> what are files ready to commit in git repo
+	git add -A --> added untracked files to git/add all ur files into staging area 
 	
+	git config --global user.name "shivakumar2133"
+	git config --global user.email "shivakumar88973@gmail.com"
 	
-	
-	
-	
+	git commit -m "this is my first commit" --> commit all the files into git repo
+		
+	git push -u origin master --> ask you username and pwd pushing the files from git -- to --github 
 	
 	
 	
