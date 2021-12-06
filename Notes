@@ -1,0 +1,166 @@
+				1.PAGE OBJECTS
+--------------------------------------------------------------------------------------------------------------				
+	LoginPage.java
+	AddCustomerPage.java
+	EditCustomerPage.java
+	DeleteCustomerPage.java
+	
+	  			2. Utilities
+--------------------------------------------------------------------------------------------------------------	  			
+	ReadConfig.java To Read the configuration files
+	Reporting.java  To generate the reports
+	XLUtils.java    To read the data from xl files
+	
+				3. Config Files
+--------------------------------------------------------------------------------------------------------------	
+	pom.xml
+	Extent-config.xml
+	log4j.properties
+	Config.properties
+	
+				4. Test Cases
+--------------------------------------------------------------------------------------------------------------				
+	TC_LoginTest_001.java
+	TC_LoginDDT_002.java
+	TC_ADDCustomer_003.java
+	TC_EditCustomer_004.java
+	TC_DeleteCustomer_005.java
+	
+				5.1 TESTNG.XML
+				5.2 pom.xml
+				6. Maven Run.bat
+				7. Jenkins
+					
+	Create Maven Project
+	Update POM.xml
+	Create Page Objects
+	Create Basic Test case
+	Add logs to test case
+	
+	1. Read common values from properties file
+--------------------------------------------------------------------------------------------------------------	
+1.1 config.properties
+1.2 ReadConfig.java
+1.3	BaseClass
+
+	2. Run test case on desired browser
+--------------------------------------------------------------------------------------------------------------	
+	
+	3. Add extent report
+--------------------------------------------------------------------------------------------------------------	
+3.1 jars
+3.2 extent-config.xml
+3.3 listener class (Reporting.java)----utility
+3.4 listener class used to generate Extent reports
+3.5 Add entry in testng.xml file
+
+	4. Data Driven Test
+--------------------------------------------------------------------------------------------------------------	
+4.1 XLS file
+4.2 Apache poi jars
+4.3 xlutils.java
+
+	5. Adding new test case
+--------------------------------------------------------------------------------------------------------------	
+5.1 create a class in page objects package
+5.2 develop/write a test case in testcases package
+
+	6. how to run failed testcases???
+--------------------------------------------------------------------------------------------------------------	
+6.1 In project folder structure-->test-output-->testng-failed.xml file is used to run failed test cases
+
+	
+	
+	
+						Phase-2
+--------------------------------------------------------------------------------------------------------------
+	-> Run test cases with Maven pom.xml
+	-> Run test cases through Maven CLI(command line interface)
+	-> Run test cases using run.bat
+	-> Run test cases using Jenkins (using bat file)
+	
+	
+	1. run test using pom.xml (within eclipse)
+--------------------------------------------------------------------------------------------------------------	
+	   we have to add plug-insin pom.xml
+	   1. compiler plug-in
+	   2. surefire plug-in
+	 
+	2. run test cases through cli
+--------------------------------------------------------------------------------------------------------------	
+	   	1. install maven on windows os
+	   	2. configure env variables
+	   	open cmd and provide project path and run mvn clean install command
+	   	
+	3. run test cases using bat file
+--------------------------------------------------------------------------------------------------------------
+	   1. create run.bat file in project folder
+	    run below commands in bat file
+	   cd project path
+	   mvn clean install
+	db on bat file will automatically open cli and test cases will be executed
+	
+	4. run test cases using Jenkins(CI tool)
+--------------------------------------------------------------------------------------------------------------
+	Continuous Integration(CI)
+	Maven Build Tool
+	Jenkins
+	Git    Repository
+	GitHub	Repository
+	
+	Install Jenkins LTS file
+	db on jenkins.msi file
+	username=admin
+	password=admin
+	mailid=shivakumar8973
+	
+	1. execute project using free style project (run.bat)
+	---------------------------------------------------------
+	click on new item-->give some name to ur project and select free style --> click on OK
+	open build ddl and select execute windows batch cmd
+	 give cd E:\New folder\eBanking
+	 run.bat
+	 apply and save
+	
+	2. execute project using maven (pom.xml) prefer this always
+	-----------------------------------------------------------
+	Install Maven plugins
+	
+	5. Git and GitHub
+---------------------------------------------------------------	
+	1. Local repo (Git)
+	2. Remote repo (GutHub)
+	
+	pre-requisites
+	---------------
+	1. install git in local system
+	2. create an account in github
+		https://github.com/shivakumar2133/eBanking.git
+	
+	Git Commands
+	-------------
+	1. commit
+	2. push
+	3. pull
+	
+	git init--> create an empty git repository (local repo)
+	git remote add origin "https://github.com/shivakumar2133/eBanking.git"
+	git status--> what are files ready to commit in git repo
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
