@@ -155,6 +155,20 @@
 		
 	git push -u origin master --> ask you username and pwd pushing the files from git -- to --github 
 	
+	---------------------------------------
+	2nd round
+	-------
+	git status ---> what are files ready to commit in git repository
+	
+	git add -A or File Name --> Add all your files in to staging area
+	
+	git commit -m "this is second commit"
+	
+	git push -u origin master
+	
+	git pull origin master --> pull the files from github -->git
+	----------------------------------------
+	
 	
 	
 	
